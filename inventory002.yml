@@ -2,18 +2,18 @@
 
 all:
   hosts:
-    workstation001
+    workstation001:
   children:
     webservers:
       hosts:
-        web001
-        web002
+        web001:
+        web002:
       vars:
         yml_var01: q42
     databases:
       hosts:
-        db001
-        db002
+        db001:
+        db002:
       vars:
         yml_var02: a42
 
